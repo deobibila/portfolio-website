@@ -7,7 +7,9 @@ export default function Header() {
       <Container>
         <nav className="flex space-x-4">
           <Link href="/">About</Link>
-          <Link href="/posts">Posts</Link>
+          <Link href="/posts">Projects</Link>
+            <Link href="/posts/">Blog</Link>
+            <Link href="/posts/">Resume</Link>
         </nav>
       </Container>
     </header>
