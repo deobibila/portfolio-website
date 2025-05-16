@@ -13,14 +13,36 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Clone and deploy your own Next.js portfolio in minutes."
+
+        {/* Global schema markup */}
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Deo Bibila",
+                "url": "https://deobibila.com",
+                "sameAs": [
+                  "https://github.com/deobibila",
+                  "https://linkedin.com/in/deobibila",
+                  "https://x.com/deobibila"
+                ],
+                "jobTitle": "Infrastructure & ML Engineer",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "Freelance"
+                },
+                "alumniOf": {
+                  "@type": "University",
+                  "name": "Western Governors University"
+                }
+              })
+            }}
         />
-        <title>My awesome blog</title>
       </Head>
 
-      <Header />
+      <Header/>
 
       <main className="py-14">
         <Component {...pageProps} />

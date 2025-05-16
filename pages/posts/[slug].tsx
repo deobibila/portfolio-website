@@ -20,26 +20,39 @@ export default function PostPage({
   return (
     <Container>
       <Head>
-        <title>{post.title} | My awesome blog</title>
+        <title>{post.title} | Deo Bibila's blog</title>
+        <meta name="description" content={post.excerpt}/>
+        <meta name="author" content="Deo Bibila"/>
+        <meta property="og:title" content={post.title}/>
+        <meta property="og:description" content={post.excerpt}/>
+        <meta
+            property="og:url"
+            content={`https://www.deobibila.com/posts/${post.slug}`}
+        />
+        <meta
+            property="og:image"
+            content={`https://www.deobibila.com/images/${post.slug}.jpg`}
+        />
+        <meta name="twitter:card" content="summary_large_image"/>
       </Head>
 
       {router.isFallback ? (
-        <div>Loading…</div>
+          <div>Loading…</div>
       ) : (
-        <div>
-          <article>
-            <header>
-              <h1 className="text-4xl font-bold">{post.title}</h1>
-              {post.excerpt ? (
-                <p className="mt-2 text-xl">{post.excerpt}</p>
-              ) : null}
-              <time className="flex mt-2 text-gray-400">
-                {distanceToNow(new Date(post.date))}
-              </time>
-            </header>
+          <div>
+            <article>
+              <header>
+                <h1 className="text-4xl font-bold">{post.title}</h1>
+                {post.excerpt ? (
+                    <p className="mt-2 text-xl">{post.excerpt}</p>
+                ) : null}
+                <time className="flex mt-2 text-gray-400">
+                  {distanceToNow(new Date(post.date))}
+                </time>
+              </header>
 
-            <div
-              className="prose mt-10"
+              <div
+                  className="prose mt-10"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
           </article>
