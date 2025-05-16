@@ -32,7 +32,7 @@ function HomePage() {
       <Container>
         <div className="space-y-6">
           <h1 className="text-2xl font-bold">
-            Hello World, I'm Deo — a future software engineer passionate about back-end,infrastructure and machine learning.
+            Hello World, I'm Deo — a future software engineer passionate about back-end, infrastructure and machine learning.
           </h1>
           <h4 className="text-blue-400 italic">
             Favorite Quote: "Sometime People aren't Perfect, it doesn't mean they're not good" (I read it somewhere ha ha)
