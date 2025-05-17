@@ -1,13 +1,45 @@
-# Deo's Blog
+# 💻 Deo Bibila
 
-Just a small Website displaying my blog posts and projects.
-I plan on updating this periodically with new information has time goes.
+Welcome to the source code for my personal website, [deobibila.com](https://deobibila.com) — a hub for my blog posts, and professional journey as an engineer building systems and scalable infrastructure.
 
-## Deployment
-This website is deployed on vercel
+---
 
-## Language
-I used Nextjs and Tailwind 
+## Live Site
+
+➡[https://deobibila.com](https://deobibila.com)
+
+---
+
+## 🧠 About This Portfolio
+
+This site was built because I was bored and decided to not be depressed anymore. It currently includes:
+
+-  About Me section
+-  Projects with code and live demos [Github]
+- ️ Blog (coming soon)
+-  RSS Feed (coming soon)
+-  Contact & links to GitHub, LinkedIn, Scholar, and more (Need Updates)
+-  Get updates about my work through my email newsletter (coming soon)
+
+---
+
+##  Tech Stack
+
+- **Framework:** Next.js
+- **Styling:** TailwindCSS
+- **Deployment:** Vercel
+- **Domain:** [deobibila.com](https://deobibila.com), with canonical redirects from `.live` & '.tech'
+
+---
+
+##  Running Locally
+
+1. Feel free to clone the repo:
+
+```bash
+git clone https://github.com/deobibila/portfolio-website.git
+cd portfolio-website
+
 
 
 

@@ -6,7 +6,7 @@ function HomePage() {
   return (
       <>
         <Head>
-          <title>Deo Bibila – Infrastructure & ML Engineer</title>
+          <title>Deo Bibila – Infrastructure & ML Engineering</title>
           <meta
               name="description"
               content="Deo Bibila is a software engineer focused on backend, infrastructure, and machine learning. Explore his projects, blog, and journey."
@@ -45,7 +45,7 @@ function HomePage() {
               Deo Bibila
             </h1>
             <p>Hello World! I recently completed my B.S. in Computer Science and I’m passionate about building scalable
-              infrastructure and contributing to ML research.
+              infrastructure and contributing to Distributed Computing and ML research.
             </p>
             <p>In the meantime, I'm fighting my demons daily on{" "}
               <a

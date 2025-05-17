@@ -23,10 +23,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 "@type": "Person",
                 "name": "Deo Bibila",
                 "url": "https://deobibila.com",
+                "image": "https://deobibila.com/photo.jpeg",
                 "sameAs": [
                   "https://github.com/deobibila",
                   "https://linkedin.com/in/deobibila",
-                  "https://x.com/deobibila"
+                  "https://x.com/deobibila",
+                  "https://scholar.google.com/citations?hl=en&user=JIsp2fQAAAAJ",
+                  "https://orcid.org/0009-0004-2808-1460"
+                  // TODO: Add arXiv profile link once Deo Bibila is published
+
                 ],
                 "jobTitle": "Infrastructure & ML Engineer",
                 "worksFor": {
@@ -34,7 +39,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                   "name": "Freelance"
                 },
                 "alumniOf": {
-                  "@type": "University",
+                  "@type": "CollegeOrUniversity",
                   "name": "Western Governors University"
                 }
               })
