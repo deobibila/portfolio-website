@@ -33,8 +33,8 @@ function HomePage() {
           <Image
               src="/photo.jpeg"
               alt="Deo Bibila"
-              width={120}
-              height={120}
+              width={220}
+              height={220}
               className="rounded-full mx-auto"
           />
         </div>
@@ -44,7 +44,14 @@ function HomePage() {
             <h1 className="text-2xl font-bold">
               Deo Bibila
             </h1>
-            <p>Just finished my BS CS Degree and looking forward to becoming a software engineer and do research.
+            <p>Hello World! I recently completed my B.S. in Computer Science and I’m passionate about building scalable
+              infrastructure and contributing to ML research
+            </p>
+
+
+            <p>
+              I’m currently exploring roles in infrastructure, backend engineering or applied machine learning,
+              where I can contribute to high-impact projects and learn in the process.
             </p>
 
             <h4 className="text-blue-400 italic">
@@ -63,11 +70,6 @@ function HomePage() {
                 — <cite itemProp="about">Emma Swan, Once Upon a Time</cite>
               </footer>
             </blockquote>
-
-            <p>
-              I Recently graduated with my Bachelor of Science in Computer Science.
-              I’m working on open source projects related to ML and Infrastructure.
-            </p>
 
             <p>
               <span className="font-semibold text-blue-400">Interests:</span>{' '}
