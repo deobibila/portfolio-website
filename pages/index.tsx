@@ -46,7 +46,8 @@ function HomePage() {
             </h1>
             <p>Hello World! I recently completed my B.S. in Computer Science and I’m passionate about building scalable
               infrastructure and contributing to ML research.
-              In the meantime, I'm fighting my DSA demons daily on{" "}
+            </p>
+            <p>In the meantime, I'm fighting my demons daily on{" "}
               <a
                   href="https://leetcode.com/u/deobibila/"
                   target="_blank"
@@ -54,9 +55,7 @@ function HomePage() {
                   className="text-blue-500 hover:underline"
               >
                 LeetCode →
-              </a>
-            </p>
-
+              </a></p>
 
             <p>
               I’m currently exploring roles in infrastructure, backend engineering or applied machine learning,
