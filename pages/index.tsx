@@ -24,7 +24,7 @@ function HomePage() {
           <meta property="og:url" content="https://www.deobibila.com/"/>
           <meta
               property="og:image"
-              content="https://www.deobibila.com/desk.jpg"
+              content="https://www.deobibila.com/photo.jpeg"
           />
           <meta name="twitter:card" content="summary_large_image"/>
         </Head>
