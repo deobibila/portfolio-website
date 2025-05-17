@@ -45,7 +45,7 @@ function HomePage() {
               Deo Bibila
             </h1>
             <p>Hello World! I recently completed my B.S. in Computer Science and I’m passionate about building scalable
-              infrastructure and contributing to ML research
+              infrastructure and contributing to ML research.
             </p>
 
 
@@ -74,7 +74,7 @@ function HomePage() {
             <p>
               <span className="font-semibold text-blue-400">Interests:</span>{' '}
               Machine Learning Systems, Artificial Intelligence, Backend Infra, Applied Mathematics,
-              Statistical Modeling, Distributed Computing, Scalable Systems, Research
+              Statistical Modeling, Distributed Computing, Scalable Systems, Research.
             </p>
 
 
