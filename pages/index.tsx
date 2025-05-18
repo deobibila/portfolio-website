@@ -44,7 +44,7 @@ function HomePage() {
             <h1 className="text-2xl font-bold">
               Deo Bibila
             </h1>
-            <p>Hello World! I recently completed my B.S. in Computer Science and I’m passionate about building scalable
+            <p>Hello World! I recently completed my B.S. in Computer Science and I am passionate about building scalable
               infrastructure and contributing to Distributed Computing and ML research.
             </p>
             <p>In the meantime, I'm fighting my demons daily on{" "}
@@ -58,7 +58,7 @@ function HomePage() {
               </a></p>
 
             <p>
-              I’m currently exploring roles in infrastructure, backend engineering or applied machine learning,
+              I am currently exploring roles in infrastructure, backend engineering or applied machine learning,
               where I can contribute to high-impact projects and learn in the process.
             </p>
 
@@ -78,6 +78,10 @@ function HomePage() {
                 — <cite itemProp="about">Emma Swan, Once Upon a Time</cite>
               </footer>
             </blockquote>
+
+            <h4 className="text-blue-400 italic">
+              Favorite Movie:
+            </h4>
 
             <p>
               <span className="font-semibold text-blue-400">Interests:</span>{' '}
