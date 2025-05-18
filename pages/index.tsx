@@ -79,10 +79,6 @@ function HomePage() {
               </footer>
             </blockquote>
 
-            <h4 className="text-blue-400 italic">
-              Favorite Movie:
-            </h4>
-
             <p>
               <span className="font-semibold text-blue-400">Interests:</span>{' '}
               Machine Learning Systems, Artificial Intelligence, Backend Infra, Applied Mathematics,
