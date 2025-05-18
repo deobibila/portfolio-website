@@ -28,7 +28,7 @@ export default function Header() {
               rel="noopener noreferrer"
               onClick={handleDownload}
           >
-            Download Resume
+            Resume
           </a>
         </nav>
       </Container>
