@@ -26,7 +26,7 @@ Long term, I plan to finish my Master’s in Machine Learning and Computing Syst
 
 I promise, this will be the only blog that will sound like this. Next time I will have something a bit more technical and interesting to read.
 
-Thanks for reading this :)
+Thanks for reading this!
 
 
 
