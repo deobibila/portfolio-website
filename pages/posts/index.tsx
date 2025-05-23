@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "../../components/container";
 import distanceToNow from "../../lib/dateRelative";
 import { getAllPosts } from "../../lib/getPost";
+import { generateRSSFeed} from "../../scripts/generate-rss";
 
 export default function NotePage({
   allPosts,
@@ -12,6 +13,12 @@ export default function NotePage({
       {allPosts.length ? (
         allPosts.map((post) => (
           <article key={post.slug} className="mb-10">
+            <img
+              src={`/images/${post.image}`}
+              alt={`Cover image for ${post.title}`}
+              className="w-24 h-24 object-cover rounded"
+            />
+            <div>
             <Link
               as={`/posts/${post.slug}`}
               href="/posts/[slug]"
@@ -23,6 +30,7 @@ export default function NotePage({
             <div className="text-gray-400">
               <time>{distanceToNow(new Date(post.date))}</time>
             </div>
+            </div>
           </article>
         ))
       ) : (
@@ -33,7 +41,9 @@ export default function NotePage({
 }
 
 export async function getStaticProps() {
-  const allPosts = getAllPosts(["slug", "title", "excerpt", "date"]);
+  const allPosts = getAllPosts(["slug", "title", "excerpt", "date", "image"]);
+
+  await generateRSSFeed();
 
   return {
     props: { allPosts },

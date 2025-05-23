@@ -12,7 +12,13 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       domain={process.env.NEXT_PUBLIC_AUTH0_DOMAIN}
     >
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="Deo's Blog RSS Feed"
+            href="/rss.xml"
+        />
 
         {/* Global schema markup */}
         <script

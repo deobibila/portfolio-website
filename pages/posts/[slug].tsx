@@ -1,4 +1,13 @@
-import type { InferGetStaticPropsType } from "next";
+type Post= {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  content: string;
+  image?: string;
+};
+
+//import type { InferGetStaticPropsType } from "next"; (not used anymore, been replaced with post)
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Comment from "../../components/comment";
@@ -9,8 +18,11 @@ import markdownToHtml from "../../lib/markdownToHtml";
 import Head from "next/head";
 
 export default function PostPage({
-  post,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+                                   post,
+                                 }: {
+  post: Post;
+}) {
+  
   const router = useRouter();
 
   if (!router.isFallback && !post?.slug) {
@@ -20,20 +32,36 @@ export default function PostPage({
   return (
     <Container>
       <Head>
-        <title>{post.title} | Deo Bibila's blog</title>
+        <title>{post.title} | Deo's blog</title>
         <meta name="description" content={post.excerpt}/>
         <meta name="author" content="Deo Bibila"/>
         <meta property="og:title" content={post.title}/>
         <meta property="og:description" content={post.excerpt}/>
+        <meta property="og:article" content="article" />
         <meta
             property="og:url"
             content={`https://www.deobibila.com/posts/${post.slug}`}
         />
         <meta
             property="og:image"
-            content={`https://www.deobibila.com/images/${post.slug}.jpg`}
+            content={
+
+              post.image
+              ? `https://www.deobibila.com/images/${post.image}.jpg`
+              : `https://www.deobibila.com/images/default-og.jpg`
+            }
         />
         <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={post.title} />
+        <meta name="twitter:description" content={post.excerpt}/>
+        <meta name="twitter:image" content={
+          post.image
+              ? `https://www.deobibila.com/images/${post.image}`
+              : `https://www.deobibila.com/images/default-og.jpg`
+        }/>
+
+
+        <link rel="canonical" href={`https://www.deobibila.com/posts/${post.slug}`}/>
       </Head>
 
       {router.isFallback ? (
@@ -77,6 +105,7 @@ export async function getStaticProps({ params }: Params) {
     "excerpt",
     "date",
     "content",
+    "image",
   ]);
   const content = await markdownToHtml(post.content || "");
 
