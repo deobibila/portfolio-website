@@ -13,12 +13,6 @@ export default function NotePage({
       {allPosts.length ? (
         allPosts.map((post) => (
           <article key={post.slug} className="mb-10">
-            <img
-              src={`/images/${post.image}`}
-              alt={`Cover image for ${post.title}`}
-              className="w-24 h-24 object-cover rounded"
-            />
-            <div>
             <Link
               as={`/posts/${post.slug}`}
               href="/posts/[slug]"
@@ -29,7 +23,6 @@ export default function NotePage({
             <p>{post.excerpt}</p>
             <div className="text-gray-400">
               <time>{distanceToNow(new Date(post.date))}</time>
-            </div>
             </div>
           </article>
         ))
