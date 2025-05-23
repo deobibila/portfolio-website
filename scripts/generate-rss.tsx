@@ -1,12 +1,12 @@
 import fs from "fs";
 import path from "path";
-import { Feed } from "rss";
+import {Feed} from "feed";
 import { getAllPosts } from "../lib/getPost";
 
 export async function generateRSSFeed() {
     const feed = new Feed({
         title: "Deo's Blog",
-        description: "Experiments & Blog",
+        description: "Experiments, Research & Blog",
         id: "https://www.deobibila.com/",
         link: "https://www.deobibila.com/",
         language: "en",
@@ -27,5 +27,8 @@ export async function generateRSSFeed() {
         });
     });
 
-    fs.writeFileSync(path.join(process.cwd(), "public", "rss.xml"), feed.xml({ indent: true }));
+    fs.writeFileSync(
+        path.join(process.cwd(), "public", "rss.xml"),
+        feed.rss2()
+    );
 }

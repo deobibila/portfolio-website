@@ -10,6 +10,7 @@
     "@tailwindcss/typography": "^0.5.7",
     "@vercel/speed-insights": "^1.2.0",
     "date-fns": "^2.29.3",
+    "feed": "^5.0.1",
     "gray-matter": "4.0.3",
     "ioredis": "^5.2.4",
     "nanoid": "^5.1.5",
