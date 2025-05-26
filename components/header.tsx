@@ -1,4 +1,10 @@
 import Link from "next/link";
+import { FiExternalLink } from "react-icons/fi";
+
+const LinkIcon: React.FC = () => (
+    <FiExternalLink className="ml-1 w-4 h-4" />
+);
+
 import Container from "../components/container";
 
 export default function Header() {
@@ -19,16 +25,18 @@ export default function Header() {
         <nav className="flex space-x-4">
           <Link href="/">About</Link>
           <Link href="/posts/">Blog</Link>
-          <Link href="https://github.com/deobibila">Projects</Link>
-          <Link href="https://scholar.google.com.au/citations?hl=en&user=JIsp2fQAAAAJ">Research</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/research">Research</Link>
           <a
               href="/resume-placeholder.pdf"
-              className="text-blue-600 hover:underline"
+              className="flex items-center text-blue-600 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleDownload}
           >
-            Resume
+
+            Resume <LinkIcon />
+
           </a>
         </nav>
       </Container>

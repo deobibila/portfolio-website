@@ -21,7 +21,7 @@ export default function CommentForm({
         placeholder={
           isAuthenticated
             ? `What are your thoughts?`
-            : "Please login to leave a comment"
+            : "Please login to leave a comment_backup"
         }
         onChange={(e) => setText(e.target.value)}
         value={text}

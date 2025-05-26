@@ -10,9 +10,9 @@ type Post= {
 //import type { InferGetStaticPropsType } from "next"; (not used anymore, been replaced with post)
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import Comment from "../../components/comment";
+//import Comment from "../../components/comment_backup"; (won't use comment_backup, it's just a portfolio)
 import Container from "../../components/container";
-import distanceToNow from "../../lib/dateRelative";
+// import distanceToNow from "../../lib/dateRelative"; (not in use anymore)
 import { getAllPosts, getPostBySlug } from "../../lib/getPost";
 import markdownToHtml from "../../lib/markdownToHtml";
 import Head from "next/head";
@@ -22,7 +22,7 @@ export default function PostPage({
                                  }: {
   post: Post;
 }) {
-  
+
   const router = useRouter();
 
   if (!router.isFallback && !post?.slug) {
@@ -32,7 +32,7 @@ export default function PostPage({
   return (
     <Container>
       <Head>
-        <title>{post.title} | Deo's blog</title>
+        <title>{`${post.title || "Untitled"} | Deo's blog`}</title>
         <meta name="description" content={post.excerpt}/>
         <meta name="author" content="Deo Bibila"/>
         <meta property="og:title" content={post.title}/>
@@ -74,18 +74,22 @@ export default function PostPage({
                 {post.excerpt ? (
                     <p className="mt-2 text-xl">{post.excerpt}</p>
                 ) : null}
-                <time className="flex mt-2 text-gray-400">
-                  {distanceToNow(new Date(post.date))}
+                <time dateTime={post.date} className="flex mt-2 text-gray-400">
+                  {new Date(post.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
                 </time>
+
               </header>
 
               <div
                   className="prose mt-10"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-          </article>
+                  dangerouslySetInnerHTML={{__html: post.content}}
+              />
+            </article>
 
-          <Comment />
         </div>
       )}
     </Container>

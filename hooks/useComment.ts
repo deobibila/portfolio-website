@@ -17,7 +17,7 @@ export default function useComments() {
   const [text, setText] = useState("");
 
   const { data: comments, mutate } = useSWR<Comment[]>(
-    "/api/comment",
+    "/api/comment_backup",
     fetcher,
     { fallbackData: [] },
   );

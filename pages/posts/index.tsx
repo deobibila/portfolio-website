@@ -22,12 +22,16 @@ export default function NotePage({
             </Link>
             <p>{post.excerpt}</p>
             <div className="text-gray-400">
-              <time>{distanceToNow(new Date(post.date))}</time>
+              <time>
+                {new Date(post.date).toLocaleString('en-US', {
+                  dateStyle: 'long'
+                })}
+              </time>
             </div>
           </article>
         ))
       ) : (
-        <p>No blog posted yet :/</p>
+          <p>No blog posted yet :/</p>
       )}
     </Container>
   );
