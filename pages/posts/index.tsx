@@ -20,7 +20,7 @@ export default function NotePage({
         <meta property="og:description" content="Blog posts by Deo Bibila on tech & research."/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://www.deobibila.com/posts"/>
-        <meta property="og:image" content="https://www.deobibila.com/images/blog-preview.jpg"/>
+        <meta property="og:image" content="https://www.deobibila.com/images/default-og.jpg"/>
         <meta property="og:image:alt" content="A preview of Deo's blog homepage"/>
         <meta property="og:image:width" content="1200"/>
         <meta property="og:image:height" content="630"/>
@@ -28,7 +28,7 @@ export default function NotePage({
         {/* Twitter Tags */}
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content="Deo's Blog"/>
-        <meta name="twitter:description" content="Blog posts by Deo Bibila on tech, creativity, and life."/>
+        <meta name="twitter:description" content="Blog posts by Deo Bibila on tech & research."/>
         <meta name="twitter:image" content="https://www.deobibila.com/images/default-og.jpg"/>
 
         <link rel="canonical" href="https://www.deobibila.com/posts"/>

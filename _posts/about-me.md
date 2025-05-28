@@ -2,7 +2,7 @@
 title: "A Bit About Me"
 excerpt: "Life took an unexpected turn, but sometimes, redirection leads to a deeper purpose."
 date: "2025-05-25"
-image: "default-og.jpg"
+image: "default.jpg"
 ---
 
 
