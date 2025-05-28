@@ -56,7 +56,7 @@ export default function PostPage({
         <meta name="twitter:description" content={post.excerpt}/>
         <meta name="twitter:image" content={
           post.image
-              ? `https://www.deobibila.com/images/${post.image}`
+              ? `https://www.deobibila.com/images/${post.image}.jpg`
               : `https://www.deobibila.com/images/default-og.jpg`
         }/>
 
