@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import Header from "../components/header";
@@ -59,6 +60,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </main>
       <SpeedInsights />
+      <Analytics />
     </Auth0Provider>
   );
 }
