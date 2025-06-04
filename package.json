@@ -12,6 +12,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "date-fns": "^2.29.3",
     "feed": "^5.0.1",
+    "framer-motion": "^12.16.0",
     "gray-matter": "4.0.3",
     "icons": "^1.0.0",
     "ioredis": "^5.2.4",
