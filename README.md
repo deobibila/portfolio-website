@@ -16,10 +16,10 @@ This site was built because I was bored and decided to not be depressed anymore.
 
 -  About Me section
 -  Projects with code and live demos [Github]
-- ️ Blog (coming soon)
--  RSS Feed (coming soon)
+- ️ Blog (Updated- Done)
+-  RSS Feed (Fixed)
 -  Contact & links to GitHub, LinkedIn, Scholar, and more (Need Updates)
--  Get updates about my work through my email newsletter (coming soon)
+-  Get updates about my work through my email newsletter (coming soon - for the future)
 
 ---
 
