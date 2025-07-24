@@ -44,7 +44,7 @@ function HomePage() {
             <h1 className="text-2xl font-bold">
               Deo Bibila
             </h1>
-            <p>Hello World! I recently completed my B.S. in Computer Science and I am passionate about building scalable
+            <p>Hello World! I recently completed my B.S. in Computer Science, and I am passionate about building scalable
               infrastructure and contributing to Distributed Computing and ML research.
             </p>
             <p>In the meantime, I'm fighting my demons daily on{" "}
