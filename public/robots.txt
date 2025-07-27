@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /madison
 
 Sitemap: https://www.deobibila.com/sitemap.xml

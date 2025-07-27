@@ -34,6 +34,26 @@ export default function NotePage({
           <link rel="canonical" href="https://www.deobibila.com/posts"/>
         </Head>
 
+        <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
+          <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
+          <p className="text-sm text-yellow-700 mt-1 italic">
+            Writing: <span className="font-medium">"Scaling Infrastructure for Student-Run Startups"</span> - coming soon
+          </p>
+
+          <details className="mt-3">
+            <summary className="cursor-pointer text-sm text-yellow-800 underline underline-offset-2 hover:text-yellow-900">
+              sneak peek
+            </summary>
+            <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
+              Everyone talks about scaling systems for millions of users — but what about scaling when you’re the only dev, the team is part-time, and your budget is $0?
+              <br/><br/>
+              This post explores what I've learned from building systems that don’t just work, but survive the chaos of real student-run environments.
+            </div>
+          </details>
+        </div>
+
+
+
         <h1 className="text-2xl font-bold mb-6">All Blog Posts</h1>
 
         {allPosts.length ? (

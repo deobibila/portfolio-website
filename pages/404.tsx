@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function Custom404() {
     return (
         <div style={styles.container}>
-            <h3 style={styles.heading}>404 Error - Awww Don't be sad tho!!!</h3>
+            <h3 style={styles.heading}>Oopsy - You're Lost!!!</h3>
 
             <blockquote style={styles.quote}>
-                “You're competing all alone, but well done anyway.” - Damso
+                “Just be silly sometimes, life ain't that serious you know!.” - Deo
             </blockquote>
 
             <p style={styles.funFact}>
