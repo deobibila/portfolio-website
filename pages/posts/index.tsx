@@ -37,7 +37,7 @@ export default function NotePage({
         <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
           <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
           <p className="text-sm text-yellow-700 mt-1 italic">
-            Writing: <span className="font-medium">"Scaling Infrastructure for Student-Run Startups"</span> - coming soon
+            Writing: <span className="font-medium">"Latency-Aware Load Balancer for Microservices Using RL"</span> - coming soon
           </p>
 
           <details className="mt-3">
@@ -52,6 +52,22 @@ export default function NotePage({
           </details>
         </div>
 
+
+        <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
+          <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
+          <p className="text-sm text-yellow-700 mt-1 italic">
+            Writing: <span className="font-medium">"Adaptive ML-Based Caching for Content Delivery"</span> - coming soon
+          </p>
+
+          <details className="mt-3">
+            <summary className="cursor-pointer text-sm text-yellow-800 underline underline-offset-2 hover:text-yellow-900">
+              sneak peek
+            </summary>
+            <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
+              Everyone talks about scaling systems for millions of users — but what about scaling when you’re the only dev, the team is part-time, and your budget is $0?
+            </div>
+          </details>
+        </div>
 
 
         <h1 className="text-2xl font-bold mb-6">All Blog Posts</h1>

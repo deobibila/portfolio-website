@@ -100,18 +100,29 @@ function HomePage() {
             <h2 className="text-2xl font-bold mt-10 mb-2">What I'm Doing Now</h2>
             <hr className="border-t-2 border-gray-200 mb-6 w-full" />
             <p className="text-gray-700">
-              Learning advanced system design while contributing to open source tools in the backend/infrastructure space.
-              Exploring ideas for a blog series on scaling ML inference and cost-aware engineering (think Pinterest + Meta).
+              Learning advanced system design and infrastructure while contributing to open source tools in the backend/infrastructure space.
+              The open source tool i'm contributing too is called <a href='https://www.ray.io/' className="text-blue-400">Ray</a>.
             </p>
             <p className="text-gray-700">
-              Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for someone special 🎁.
+              I'm also working on a flight deal website where people can find deals and get alerts for a specific destination whenever the price drops.
+            </p>
+            <p className="text-gray-700">
+              Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for someone special :)
             </p>
             <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated July 26th, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+              (Updated August 21st, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
-
-
-
+            {/*
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <div className="border p-4 rounded-lg shadow hover:shadow-md transition">
+                <h3 className="font-bold text-lg">Distributed Caching System</h3>
+                <p className="text-sm text-gray-600 mt-1">Built a Redis-based LRU cache with Go and Docker; benchmarked against memcached and tuned performance under 500ms at 1K RPS.</p>
+                <p className="text-xs text-gray-500 mt-2">Go • Redis • Docker</p>
+                <a href="https://github.com/deobibila/distributed-cache" className="text-blue-500 text-sm hover:underline mt-2 inline-block">View on GitHub →</a>
+              </div>
+              {/* Repeat for other projects
+            </div>
+            */}
             <div className="flex justify-center space-x-6 pt-6 border-t mt-10">
               <a href="mailto:deobibila@outlook.com" target="_blank" rel="noopener noreferrer" aria-label="Email Deo">
                 <i className="fas fa-envelope text-gray-600 hover:text-red-500 text-xl"></i>

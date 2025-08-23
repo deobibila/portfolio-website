@@ -166,7 +166,7 @@ export default function MadisonPage() {
                         >
                             Just a little something to brighten your day — and maybe make you laugh.
                             <footer style={{ marginTop: '0.75rem', fontWeight: 'bold', textAlign: 'right' }}>
-                                — from your biggest supporter, Deo the CEO
+                                — from your biggest supporter, Deo
                             </footer>
                         </blockquote>
                         <div
