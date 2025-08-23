@@ -110,7 +110,7 @@ function HomePage() {
               Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for someone special :)
             </p>
             <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated August 21st, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+              (Updated August 23rd, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
