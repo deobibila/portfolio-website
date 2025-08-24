@@ -37,7 +37,7 @@ export default function NotePage({
         <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
           <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
           <p className="text-sm text-yellow-700 mt-1 italic">
-            Writing: <span className="font-medium">"Latency-Aware Load Balancer for Microservices Using RL"</span> - coming soon
+            Writing: <span className="font-medium">"Latency-Aware Load Balancer for Microservices Using RL"</span> - In Review
           </p>
 
           <details className="mt-3">
@@ -45,9 +45,7 @@ export default function NotePage({
               sneak peek
             </summary>
             <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
-              Everyone talks about scaling systems for millions of users — but what about scaling when you’re the only dev, the team is part-time, and your budget is $0?
-              <br/><br/>
-              This post explores what I've learned from building systems that don’t just work, but survive the chaos of real student-run environments.
+              In this work, I  propose a reinforcement-learning-based load balancer that dynamically allocates requests to microservice instances based on observed latency and traffic patterns.              <br/><br/>
             </div>
           </details>
         </div>
@@ -64,8 +62,7 @@ export default function NotePage({
               sneak peek
             </summary>
             <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
-              Everyone talks about scaling systems for millions of users — but what about scaling when you’re the only dev, the team is part-time, and your budget is $0?
-            </div>
+              I present an adaptive machine learning caching policy that predicts content popularity using historical access trends and dynamically adjusts cache entries            </div>
           </details>
         </div>
 
@@ -80,7 +77,9 @@ export default function NotePage({
                       href="/posts/[slug]"
                       className="text-lg leading-6 font-bold"
                   >
-                    {post.title}
+                    <h2 className="text-xl font-semibold text-blue-600 hover:underline">
+                      {post.title}
+                    </h2>
                   </Link>
                   <p>{post.excerpt}</p>
                   <div className="text-gray-400">

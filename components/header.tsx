@@ -39,7 +39,7 @@ export default function Header() {
           <Link href="/projects">Projects</Link>
           <Link href="/research">Publications</Link>
           <a
-              href="/resume-placeholder.pdf"
+              href="/resume.pdf"
               className="flex items-center text-sm text-blue-500 hover:text-blue-600"
               target="_blank"
               rel="noopener noreferrer"

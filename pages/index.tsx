@@ -50,7 +50,7 @@ function HomePage() {
             <p className="text-center text-gray-600 mt-2">
               Early-career Engineer | Infrastructure & ML Engineering | Backend Systems
             </p>
-            <h2 className="text-xl font-semibold mt-10">Me in <span className="inline-block bg-yellow-400 text-black px-2 py-1 text-xs rounded-full uppercase">30 </span>
+            <h2 className="text-xl font-semibold mt-10">Me in <span className="inline-block bg-yellow-400 text-black px-2 py-1 text-xs rounded-full uppercase"> 30 </span>
                Seconds</h2>
             <hr className="border-t-2 border-gray-200 mb-6 w-full" />
 
@@ -60,7 +60,7 @@ function HomePage() {
             </p>
 
             <p>I recently earned my B.S. in Computer Science. I'm especially interested in backend infrastructure,
-              distributed systems, and applied ML.
+              distributed systems, and ML.
 
             </p>
             <p>In the meantime, I'm fighting my demons daily on{" "}
@@ -101,13 +101,13 @@ function HomePage() {
             <hr className="border-t-2 border-gray-200 mb-6 w-full" />
             <p className="text-gray-700">
               Learning advanced system design and infrastructure while contributing to open source tools in the backend/infrastructure space.
-              The open source tool i'm contributing too is called <a href='https://www.ray.io/' className="text-blue-400">Ray</a>.
+              <a href='https://www.ray.io/' className="text-blue-400"> Ray</a> is the open source tool i'm contributing to.
             </p>
             <p className="text-gray-700">
               I'm also working on a flight deal website where people can find deals and get alerts for a specific destination whenever the price drops.
             </p>
             <p className="text-gray-700">
-              Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for someone special :)
+              Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for a friend:)
             </p>
             <p className="text-sm text-gray-500 mt-2 italic">
               (Updated August 23rd, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
