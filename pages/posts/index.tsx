@@ -45,7 +45,7 @@ export default function NotePage({
               sneak peek
             </summary>
             <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
-              In this work, I  propose a reinforcement-learning-based load balancer that dynamically allocates requests to microservice instances based on observed latency and traffic patterns.              <br/><br/>
+              In this work, I  propose a reinforcement-learning-based load balancer that dynamically allocates requests to microservice instances based on observed latency and traffic patterns. <br/><br/>
             </div>
           </details>
         </div>
@@ -62,7 +62,8 @@ export default function NotePage({
               sneak peek
             </summary>
             <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
-              I present an adaptive machine learning caching policy that predicts content popularity using historical access trends and dynamically adjusts cache entries            </div>
+              I present an adaptive machine learning caching policy that predicts content popularity using historical access trends and dynamically adjusts cache entries.
+            </div>
           </details>
         </div>
 
