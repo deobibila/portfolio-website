@@ -54,7 +54,7 @@ export default function NotePage({
         <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
           <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
           <p className="text-sm text-yellow-700 mt-1 italic">
-            Writing: <span className="font-medium">"Adaptive ML-Based Caching for Content Delivery"</span> - coming soon
+            Writing: <span className="font-medium">"Adaptive ML-Based Caching for Scalable Content Delivery"</span> - coming soon
           </p>
 
           <details className="mt-3">
@@ -68,28 +68,48 @@ export default function NotePage({
         </div>
 
 
-        <h1 className="text-2xl font-bold mb-6">All Blog Posts</h1>
+
+
+        <h1
+            className="text-3xl font-bold mb-2"
+            style={{ color: "#242424", fontFamily: 'sohne, "Helvetica Neue", Helvetica, Arial, sans-serif' }}
+        >
+          All Blog Posts
+        </h1>
+        <hr className="border-gray-200 mb-8" />
 
         {allPosts.length ? (
             allPosts.map((post) => (
                 <article key={post.slug} className="mb-10">
-                  <Link
-                      as={`/posts/${post.slug}`}
-                      href="/posts/[slug]"
-                      className="text-lg leading-6 font-bold"
-                  >
-                    <h2 className="text-xl font-semibold text-blue-600 hover:underline">
+                  <Link as={`/posts/${post.slug}`} href="/posts/[slug]">
+                    <h2
+                        className="text-xl font-semibold hover:underline"
+                        style={{
+                          color: "#242424",
+                          fontFamily:
+                              'sohne, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                        }}
+                    >
                       {post.title}
                     </h2>
                   </Link>
-                  <p>{post.excerpt}</p>
-                  <div className="text-gray-400">
+                  <p
+                      className="mt-2 text-base leading-relaxed line-clamp-3"
+                      style={{
+                        color: "#6B6B6B",
+                        fontFamily: 'sohne, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                      }}
+                  >
+                    {post.excerpt}
+                  </p>
+                  <div className="text-gray-400 text-sm mt-1">
                     <time>
-                      {new Date(post.date).toLocaleString('en-US', {
-                        dateStyle: 'long'
+                      {new Date(post.date).toLocaleString("en-US", {
+                        dateStyle: "long",
                       })}
                     </time>
                   </div>
+
                 </article>
             ))
         ) : (

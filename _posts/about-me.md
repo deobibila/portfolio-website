@@ -1,5 +1,5 @@
 ---
-title: "A Bit About Me"
+title: "My First Blog Post"
 excerpt: "Life took an unexpected turn, but sometimes, redirection leads to a deeper purpose."
 read_time: "2 min read"
 date: "2025-05-25"
