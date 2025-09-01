@@ -48,7 +48,7 @@ function HomePage() {
               Deo Bibila
             </h1>
             <p className="text-center text-gray-600 mt-2">
-              Early-career Engineer | Infrastructure & ML Engineering | Backend Systems
+              Early-career Engineer | Infrastructure & ML Engineering | Distributed Systems
             </p>
             <h2 className="text-xl font-semibold mt-10">Me in <span className="inline-block bg-yellow-400 text-black px-2 py-1 text-xs rounded-full uppercase"> 30 </span>
                Seconds</h2>
@@ -108,7 +108,7 @@ function HomePage() {
             <h2 className="text-2xl font-bold mt-10 mb-2">What I'm Doing Now</h2>
             <hr className="border-t-2 border-gray-200 mb-6 w-full" />
             <p className="text-gray-700">
-              Learning advanced system design and infrastructure while contributing to open source tools in the backend/infrastructure space.
+              I'm learning advanced system design while contributing to an open source tool in the infrastructure space.
               <a href='https://www.ray.io/' className="text-blue-400"> Ray</a> is the open source tool i'm contributing to.
             </p>
 
