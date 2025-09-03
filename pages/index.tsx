@@ -31,10 +31,10 @@ function HomePage() {
           <meta name="twitter:card" content="summary_large_image"/>
         </Head>
 
-        <div className="container max-w-4xl m-auto px-4 mt-20">
+        <div className="container max-w-4xl m-auto px-4 mt-12 md:mt-20">
           <Image
               src="/photo.jpeg"
-              alt="Deo Bibila"
+              alt="Photo of Deo Bibila"
               width={220}
               height={220}
               className="rounded-full mx-auto"
@@ -76,17 +76,10 @@ function HomePage() {
 
             <p className="mt-4">
               <span className="font-semibold text-blue-400">Interests:</span>{' '}
-              Machine Learning Systems · Applied AI · Backend Infrastructure ·
+              Machine Learning Systems · Applied AI · ML Infrastructure ·
               Statistical Modeling · Distributed Computing · Scalable Systems · Research
             </p>
 
-            <div className="p-4 border-l-4 border-green-400 bg-green-50 rounded mt-6">
-              <h2 className="text-lg font-semibold text-green-800">📖 Currently Reading</h2>
-              <p className="text-sm text-green-700 mt-1">
-                <span className="font-medium">Designing Data-Intensive Applications </span>
-                by Martin Kleppmann
-              </p>
-            </div>
 
             <h4 className="text-blue-400 italic">
               Favorite Quote:
@@ -115,8 +108,17 @@ function HomePage() {
             <p className="text-gray-700">
               Outside of tech, I’m training consistently at the gym, working on self-discipline, and building a surprise side project for a friend:)
             </p>
+
+            <div className="p-4 border-l-4 border-green-400 bg-green-50 rounded mt-6">
+              <h2 className="text-lg font-semibold text-green-800">📖 Currently Reading</h2>
+              <p className="text-sm text-green-700 mt-1">
+                <span className="font-medium">Designing Data-Intensive Applications </span>
+                by Martin Kleppmann
+              </p>
+            </div>
+
             <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated August 27th, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+              (Updated September 3rd, 2025 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
