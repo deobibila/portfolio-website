@@ -3,6 +3,10 @@ import ErrorPage from "next/error";
 import Container from "../../components/container";
 import { getAllPosts, getPostBySlug } from "../../lib/getPost";
 import markdownToHtml from "../../lib/markdownToHtml";
+import { IoShareOutline } from "react-icons/io5";
+import { BsThreeDots } from "react-icons/bs";
+
+
 import Head from "next/head";
 
 type Post = {
@@ -108,8 +112,51 @@ export default function PostPage({ post }: { post: Post }) {
                     })}
                   </time>
 
-                  {/* Divider */}
-                  <hr className="border-gray-200 my-6" />
+                  {/* Top Divider */}
+                  <hr className="border-gray-200 mt-4 mb-2" />
+
+                  {/* Action bar */}
+                  <div className="flex items-center justify-end text-gray-600 text-sm">
+                    {/* Share button */}
+                    <button
+                        onClick={() => {
+                          if (navigator.share) {
+                            navigator.share({
+                              title: post.title,
+                              url: `https://www.deobibila.com/posts/${post.slug}`,
+                            });
+                          } else {
+                            navigator.clipboard.writeText(`https://www.deobibila.com/posts/${post.slug}`);
+                            alert("Link copied to clipboard!");
+                          }
+                        }}
+                        className="hover:text-black transition mr-4"
+                        aria-label="Share"
+                    >
+                      <IoShareOutline className="h-6 w-6 text-gray-600 hover:text-black" />
+                    </button>
+
+                    {/* Dropdown menu */}
+                    <div className="relative group">
+                      <button className="hover:text-black transition">⋮</button>
+                      <div className="absolute right-0 mt-1 w-40 bg-white border border-gray-200 rounded-md shadow-md hidden group-hover:block">
+                        <button className="block w-full text-left px-3 py-1.5 text-sm hover:bg-gray-100">
+                          Report a problem
+                        </button>
+                        <button className="block w-full text-left px-3 py-1.5 text-sm hover:bg-gray-100">
+                          Send Suggestions
+                        </button>
+                        <button className="block w-full text-left px-3 py-1.5 text-sm hover:bg-gray-100">
+                          Get Updates
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bottom Divider */}
+                  <hr className="border-gray-200 mt-2 mb-6" />
+
+
                 </header>
 
                 {/* Content */}

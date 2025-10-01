@@ -8,6 +8,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",
     "@fortawesome/fontawesome-free": "^7.0.0",
+    "@heroicons/react": "^2.2.0",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/typography": "^0.5.7",
     "@vercel/analytics": "^1.5.0",
@@ -20,7 +21,7 @@
     "icons": "^1.0.0",
     "ioredis": "^5.2.4",
     "nanoid": "^5.1.5",
-    "next": "^15.3.2",
+    "next": "^15.5.2",
     "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
