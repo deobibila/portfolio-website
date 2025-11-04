@@ -48,7 +48,7 @@ function HomePage() {
               Deo Bibila
             </h1>
             <p className="text-center text-gray-600 mt-2">
-              Early-career Engineer | Infrastructure & ML Engineering | Distributed Systems
+              Infrastructure & ML Engineering | Distributed Systems
             </p>
             <h2 className="text-xl font-semibold mt-10">Me in <span className="inline-block bg-yellow-400 text-black px-2 py-1 text-xs rounded-full uppercase"> 30 </span>
                Seconds</h2>
@@ -140,7 +140,7 @@ function HomePage() {
                 <i className="fab fa-github text-gray-600 hover:text-black text-xl"></i>
               </a>
 
-              <a href="https://linkedin.com/in/deobibila" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin text-gray-600 hover:text-blue-600 text-xl"></i>
               </a>
 
