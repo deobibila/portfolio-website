@@ -36,14 +36,14 @@ export default function PostPage({ post }: { post: Post }) {
           <meta property="og:article" content="article" />
           <meta
               property="og:url"
-              content={`https://www.deobibila.com/posts/${post.slug}`}
+              content={`https://deobibila.com/posts/${post.slug}`}
           />
           <meta
               property="og:image"
               content={
                 post.image
-                    ? `https://www.deobibila.com/images/${post.image}.jpg`
-                    : `https://www.deobibila.com/images/default-og.jpg`
+                    ? `https://deobibila.com/images/${post.image}.jpg`
+                    : `https://deobibila.com/images/default-og.jpg`
               }
           />
           <meta name="twitter:card" content="summary_large_image" />
@@ -53,13 +53,13 @@ export default function PostPage({ post }: { post: Post }) {
               name="twitter:image"
               content={
                 post.image
-                    ? `https://www.deobibila.com/images/${post.image}.jpg`
-                    : `https://www.deobibila.com/images/default-og.jpg`
+                    ? `https://deobibila.com/images/${post.image}.jpg`
+                    : `https://deobibila.com/images/default-og.jpg`
               }
           />
           <link
               rel="canonical"
-              href={`https://www.deobibila.com/posts/${post.slug}`}
+              href={`https://deobibila.com/posts/${post.slug}`}
           />
         </Head>
 
@@ -123,10 +123,10 @@ export default function PostPage({ post }: { post: Post }) {
                           if (navigator.share) {
                             navigator.share({
                               title: post.title,
-                              url: `https://www.deobibila.com/posts/${post.slug}`,
+                              url: `https://deobibila.com/posts/${post.slug}`,
                             });
                           } else {
-                            navigator.clipboard.writeText(`https://www.deobibila.com/posts/${post.slug}`);
+                            navigator.clipboard.writeText(`https://deobibila.com/posts/${post.slug}`);
                             alert("Link copied to clipboard!");
                           }
                         }}

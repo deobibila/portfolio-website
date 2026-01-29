@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Deo's Blog</title>
-        <link>https://www.deobibila.com/</link>
+        <link>https://deobibila.com/</link>
         <description>Experiments, Research &amp; Blog</description>
         <lastBuildDate>Fri, 05 Sep 2025 04:07:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,14 +10,14 @@
         <language>en</language>
         <image>
             <title>Deo's Blog</title>
-            <url>https://www.deobibila.com/images/default-og.jpg</url>
-            <link>https://www.deobibila.com/</link>
+            <url>https://deobibila.com/images/default-og.jpg</url>
+            <link>https://deobibila.com/</link>
         </image>
         <copyright>All rights reserved 2025, Deo Bibila</copyright>
         <item>
             <title><![CDATA[My First Blog Post]]></title>
-            <link>https://www.deobibila.com/posts/about-me</link>
-            <guid isPermaLink="false">https://www.deobibila.com/posts/about-me</guid>
+            <link>https://deobibila.com/posts/about-me</link>
+            <guid isPermaLink="false">https://deobibila.com/posts/about-me</guid>
             <pubDate>Sun, 25 May 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Life took an unexpected turn, but sometimes, redirection leads to a deeper purpose.]]></description>
         </item>

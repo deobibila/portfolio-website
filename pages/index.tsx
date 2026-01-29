@@ -9,6 +9,9 @@ function HomePage() {
       <>
         <Head>
           <title>Deo Bibila – Infrastructure & ML Engineering</title>
+
+          <link rel="canonical" href="https://deobibila.com/" />
+
           <meta
               name="description"
               content="Deo Bibila is a software engineer focused on backend, infrastructure, and machine learning. Explore his projects, blog, and journey."
@@ -23,10 +26,10 @@ function HomePage() {
               property="og:description"
               content="Explore Deo Bibila's personal website and software engineering projects."
           />
-          <meta property="og:url" content="https://www.deobibila.com/"/>
+          <meta property="og:url" content="https://deobibila.com/"/>
           <meta
               property="og:image"
-              content="https://www.deobibila.com/photo.jpeg"
+              content="https://deobibila.com/photo.jpeg"
           />
           <meta name="twitter:card" content="summary_large_image"/>
         </Head>
@@ -118,7 +121,7 @@ function HomePage() {
             </div>
 
             <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated January 18th, 2026 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+              (Updated January 28th, 2026 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">

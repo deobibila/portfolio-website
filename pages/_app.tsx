@@ -30,10 +30,11 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 "@type": "Person",
                 "name": "Deo Bibila",
                 "url": "https://deobibila.com",
+                "@id": "https://deobibila.com/#person",
                 "image": "https://deobibila.com/photo.jpeg",
                 "sameAs": [
                   "https://github.com/deobibila",
-                  "https://linkedin.com/in/deobibila",
+                  "https://www.linkedin.com/in/deobibila",
                   "https://x.com/deobibila",
                   "https://scholar.google.com/citations?hl=en&user=JIsp2fQAAAAJ",
                   "https://orcid.org/0009-0004-2808-1460",

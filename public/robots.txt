@@ -3,4 +3,4 @@ Allow: /
 Disallow: /madison
 Disallow: /resume
 
-Sitemap: https://www.deobibila.com/sitemap.xml
+Sitemap: https://deobibila.com/sitemap.xml
