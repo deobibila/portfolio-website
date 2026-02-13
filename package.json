@@ -1,9 +1,13 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.12.0",
@@ -20,8 +24,9 @@
     "gray-matter": "4.0.3",
     "icons": "^1.0.0",
     "ioredis": "^5.2.4",
+    "mermaid": "^10.9.5",
     "nanoid": "^5.1.5",
-    "next": "15.5.9",
+    "next": "^15.5.12",
     "next-sitemap": "^4.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.2.0",
@@ -32,12 +37,19 @@
     "swr": "^2.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@next/eslint-plugin-next": "^16.1.6",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "autoprefixer": "^10.4.12",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.6",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^17.3.0",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.54.0"
   }
 }

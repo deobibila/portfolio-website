@@ -29,24 +29,27 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "name": "Deo Bibila",
-                "url": "https://deobibila.com",
+                "url": "https://deobibila.com/",
                 "@id": "https://deobibila.com/#person",
                 "image": "https://deobibila.com/photo.jpeg",
+                "mainEntityOfPage": { "@type": "WebPage", "@id": "https://deobibila.com/" },
                 "sameAs": [
                   "https://github.com/deobibila",
                   "https://www.linkedin.com/in/deobibila",
                   "https://x.com/deobibila",
                   "https://scholar.google.com/citations?hl=en&user=JIsp2fQAAAAJ",
                   "https://orcid.org/0009-0004-2808-1460",
-                  "https://www.chess.com/member/deobibila"
+                  "https://www.chess.com/member/deobibila",
+                  "https://leetcode.com/u/deobibila/"
                   // TODO: Add arXiv profile link once Deo Bibila is published
 
                 ],
-                "jobTitle": "Infrastructure & ML Engineer",
-                "worksFor": {
-                  "@type": "Organization",
-                  "name": "Freelance"
-                },
+                "jobTitle": "Software Engineer",
+                //"worksFor": {
+                  //"@type": "Organization",
+                  //"name": "Freelance"
+                //},
+                "knowsAbout": ["Infrastructure engineering", "Backend systems", "Machine learning", "Distributed systems"],
                 "alumniOf": {
                   "@type": "CollegeOrUniversity",
                   "name": "Western Governors University"

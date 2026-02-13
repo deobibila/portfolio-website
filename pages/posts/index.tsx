@@ -12,12 +12,12 @@ export default function NotePage({
   return (
       <Container>
         <Head>
-          <title>Deo's Blog</title>
-          <meta name="description" content="Blog posts by Deo"/>
+          <title>Blog – Deo Bibila</title>
+          <meta name="description" content="Writing about tech and a bit about my life."/>
           <meta name="author" content="Deo Bibila"/>
 
-          <meta property="og:title" content="Deo's Blog"/>
-          <meta property="og:description" content="Blog posts by Deo Bibila on tech & research."/>
+          <meta property="og:title" content="Blog – Deo Bibila"/>
+          <meta property="og:description" content="Writing about tech and a bit about my life."/>
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://deobibila.com/posts"/>
           <meta property="og:image" content="https://deobibila.com/images/default-og.jpg"/>
@@ -27,8 +27,8 @@ export default function NotePage({
 
           {/* Twitter Tags */}
           <meta name="twitter:card" content="summary_large_image"/>
-          <meta name="twitter:title" content="Deo's Blog"/>
-          <meta name="twitter:description" content="Blog posts by Deo Bibila on tech & research."/>
+          <meta name="twitter:title" content="Blog – Deo Bibila"/>
+          <meta name="twitter:description" content="Writing about tech and a bit about my life."/>
           <meta name="twitter:image" content="https://deobibila.com/images/default-og.jpg"/>
 
           <link rel="canonical" href="https://deobibila.com/posts"/>
@@ -49,25 +49,6 @@ export default function NotePage({
             </div>
           </details>
         </div>
-
-
-        <div className="mb-10 p-4 border-l-4 border-yellow-400 bg-yellow-50 rounded">
-          <h2 className="text-lg font-semibold text-yellow-800">🛠️ In the Works</h2>
-          <p className="text-sm text-yellow-700 mt-1 italic">
-            Writing: <span className="font-medium">"Adaptive ML-Based Caching for Scalable Content Delivery"</span> - coming soon
-          </p>
-
-          <details className="mt-3">
-            <summary className="cursor-pointer text-sm text-yellow-800 underline underline-offset-2 hover:text-yellow-900">
-              sneak peek
-            </summary>
-            <div className="mt-2 text-sm text-yellow-700 leading-relaxed">
-              I present an adaptive machine learning caching policy that predicts content popularity using historical access trends and dynamically adjusts cache entries.
-            </div>
-          </details>
-        </div>
-
-
 
 
         <h1
