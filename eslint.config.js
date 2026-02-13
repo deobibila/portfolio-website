@@ -31,6 +31,12 @@ export default [
     },
 
     {
-        ignores: [".next/**", "out/**", "dist/**", "node_modules/**"],
+        ignores: [
+            ".next/**",
+            "out/**",
+            "dist/**",
+            "node_modules/**",
+            "components/comment_backup/**",
+        ],
     },
 ];
