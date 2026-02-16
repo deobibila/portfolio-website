@@ -105,7 +105,7 @@ function HomePage() {
             <hr className="border-t-2 border-gray-200 mb-6 w-full" />
             <p className="text-gray-700">
               I'm learning advanced system design while contributing to an open source tool in the infrastructure space.
-              <a href='https://www.ray.io/' className="text-blue-400"> Ray</a> is the open source tool i'm contributing to.
+              <a href='https://github.com/ray-project/ray/' className="text-blue-400"> Ray</a> is the open source tool i'm contributing to.
             </p>
 
             <p className="text-gray-700">
@@ -121,7 +121,7 @@ function HomePage() {
             </div>
 
             <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated January 28th, 2026 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+              (Updated February 15th, 2026 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
