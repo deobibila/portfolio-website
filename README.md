@@ -1,4 +1,4 @@
-# 💻 Deo Bibila
+# Deo Bibila
 
 Welcome to the source code for my personal website, [deobibila.com](https://deobibila.com) — a hub for my blog posts, and professional journey as an engineer building systems and scalable infrastructure.
 
@@ -10,7 +10,7 @@ Welcome to the source code for my personal website, [deobibila.com](https://deob
 
 ---
 
-## 🧠 About This Portfolio
+## About This Portfolio
 
 This site was built because I was bored and decided to not be depressed anymore. It currently includes:
 
