@@ -3,6 +3,8 @@ import Container from "../components/container";
 import Image from "next/image";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+const inlineLink =
+    "underline underline-offset-4 decoration-neutral-300 transition-colors hover:text-indigo-600 hover:decoration-indigo-600";
 
 function HomePage() {
   return (
@@ -46,82 +48,35 @@ function HomePage() {
         </div>
 
         <Container>
-          <div className="space-y-6">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-center">
+          <div className="space-y-6 text-neutral-700">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-center text-neutral-900">
               Deo Bibila
             </h1>
-            <p className="text-center text-gray-600 mt-2">
+            <p className="text-center text-neutral-500 mt-2">
               Infrastructure & ML Engineering | Distributed Systems
             </p>
-            <h2 className="text-xl font-semibold mt-10">Me in <span className="inline-block bg-yellow-400 text-black px-2 py-1 text-xs rounded-full uppercase"> 30 </span>
-               Seconds</h2>
-            <hr className="border-t-2 border-gray-200 mb-6 w-full" />
+            <h2 className="text-2xl font-bold mt-10 mb-2 text-neutral-900">Me in 30 Seconds</h2>
+            <hr className="border-t-2 border-neutral-200 mb-6 w-full" />
+
+            <p>
+              I'm a Computer Science Student. I'm especially interested in Backend
+              infrastructure, distributed systems and ML. I might get into research later on too.
+            </p>
 
             <p className="mt-4">
-              I was born in Brazzaville, <a href="https://www.google.com/search?q=Republic+of+Congo" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">the Republic of Congo</a>, and later moved to the United States when I was a teenager.
-              Brazzaville is quiet and rarely in the headlines — most people haven't heard about it.
-            </p>
-
-            <p>I recently earned my B.S. in Computer Science. I'm especially interested in backend infrastructure,
-              distributed systems, and ML.
-
-            </p>
-            <p>In the meantime, I'm fighting my demons daily on{" "}
-              <a
-                  href="https://leetcode.com/u/deobibila/"
-                  target="_blank"
-                  rel="me noopener noreferrer"
-                  className="text-blue-500 hover:underline"
-              >
-                LeetCode →
-              </a></p>
-
-
-            <p className="mt-4">
-              <span className="font-semibold text-blue-400">Interests:</span>{' '}
-              Machine Learning Systems · Applied AI · ML Infrastructure ·
-              Statistical Modeling · Distributed Computing · Scalable Systems · Research
+              I was born in Brazzaville, <a href="https://www.google.com/search?q=Republic+of+Congo" target="_blank" rel="noopener noreferrer" className={inlineLink}>the Republic of Congo</a>, and later moved to the United States when I was a teenager.
             </p>
 
 
-            <h4 className="text-blue-400 italic">
-              Favorite Quote:
-            </h4>
-
-            <blockquote
-                itemScope
-                itemType="https://schema.org/CreativeWork"
-                className="border-l-4 border-blue-400 pl-4 italic text-blue-500 mt-6"
-            >
-              <p itemProp="text">
-                "Sometimes people aren't perfect. It doesn't mean they're not good."
-              </p>
-              <footer className="text-sm text-gray-600 mt-2">
-                — <cite itemProp="about">Emma Swan, Once Upon a Time</cite>
-              </footer>
-            </blockquote>
-
-            <h2 className="text-2xl font-bold mt-10 mb-2">What I'm Doing Now</h2>
-            <hr className="border-t-2 border-gray-200 mb-6 w-full" />
-            <p className="text-gray-700">
-              I'm learning advanced system design while contributing to an open source tool in the infrastructure space.
-              <a href='https://github.com/ray-project/ray/' className="text-blue-400"> Ray</a> is the open source tool i'm contributing to.
+            <h2 className="text-2xl font-bold mt-10 mb-2 text-neutral-900">What I'm Doing Now</h2>
+            <hr className="border-t-2 border-neutral-200 mb-6 w-full" />
+            <p>
+              At the time i'm writing this, I'm starting to learn advanced system design by contributing to an open source tool in the infrastructure space.{" "}
+              <a href='https://github.com/ray-project/ray/' target="_blank" rel="noopener noreferrer" className={inlineLink}>Ray</a> is the open source tool i'm starting to contribute to.
             </p>
 
-            <p className="text-gray-700">
-              Outside of tech, I’m training consistently at the gym and working on myself.
-            </p>
-
-            <div className="p-4 border-l-4 border-green-400 bg-green-50 rounded mt-6">
-              <h2 className="text-lg font-semibold text-green-800">📖 Currently Reading</h2>
-              <p className="text-sm text-green-700 mt-1">
-                <span className="font-medium">Designing Data-Intensive Applications </span>
-                by Martin Kleppmann
-              </p>
-            </div>
-
-            <p className="text-sm text-gray-500 mt-2 italic">
-              (Updated February 15th, 2026 — inspired by <a href="https://sivers.org/now" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
+            <p className="text-sm text-neutral-500 mt-2 italic">
+              (Updated October 26th, 2026 — inspired by <a href="https://sivers.org/now" className={inlineLink} target="_blank" rel="noopener noreferrer">Derek Sivers</a>)
             </p>
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
@@ -134,32 +89,32 @@ function HomePage() {
               {/* Repeat for other projects
             </div>
             */}
-            <div className="flex justify-center space-x-6 pt-6 border-t mt-10">
+            <div className="flex justify-center space-x-6 pt-6 border-t border-neutral-200 mt-10">
               <a href="mailto:deobibila@outlook.com" target="_blank" rel="noopener noreferrer" aria-label="Email Deo">
-                <i className="fas fa-envelope text-gray-600 hover:text-red-500 text-xl"></i>
+                <i className="fas fa-envelope text-neutral-500 hover:text-indigo-600 transition-colors text-xl"></i>
               </a>
 
               <a href="https://github.com/deobibila" target="_blank" rel="me noopener noreferrer" aria-label="GitHub">
-                <i className="fab fa-github text-gray-600 hover:text-black text-xl"></i>
+                <i className="fab fa-github text-neutral-500 hover:text-indigo-600 transition-colors text-xl"></i>
               </a>
 
-              <a href="https://linkedin.com/in/" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn">
-                <i className="fab fa-linkedin text-gray-600 hover:text-blue-600 text-xl"></i>
+              <a href="https://linkedin.com/in/deobibila" target="_blank" rel="me noopener noreferrer" aria-label="LinkedIn">
+                <i className="fab fa-linkedin text-neutral-500 hover:text-indigo-600 transition-colors text-xl"></i>
               </a>
 
               <a href="https://twitter.com/deobibila" target="_blank" rel="me noopener noreferrer" aria-label="X" title="X (formerly Twitter)">
-                <i className="fab fa-x-twitter text-gray-600 hover:text-gray-800 text-xl"></i>
+                <i className="fab fa-x-twitter text-neutral-500 hover:text-indigo-600 transition-colors text-xl"></i>
               </a>
             </div>
 
           </div>
-          <p className="text-center text-sm text-gray-500 mt-6">
+          <p className="text-center text-sm text-neutral-400 mt-6">
             © {new Date().getFullYear()} Deo Bibila. Built with{" "}
             <a
                 href="https://nextjs.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-blue-400 hover:underline"
+                className={`font-semibold ${inlineLink}`}
             >
               Next.js
             </a>{" "}
